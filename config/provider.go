@@ -10,7 +10,7 @@ import (
 
 	ujconfig "github.com/crossplane/upjet/pkg/config"
 
-	"github.com/wolfganghhuse/provider-nutanix/config/image"
+	"github.com/wolfganghuse/provider-nutanix/config/image"
 )
 
 const (
@@ -36,7 +36,7 @@ func GetProvider() *ujconfig.Provider {
 
 	for _, configure := range []func(provider *ujconfig.Provider){
 		// add custom config functions
-		image.Configure,
+		nutanix_image.Configure,
 	} {
 		configure(pc)
 	}
