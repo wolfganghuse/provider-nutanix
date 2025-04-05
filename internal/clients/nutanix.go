@@ -15,7 +15,7 @@ import (
 
 	"github.com/crossplane/upjet/pkg/terraform"
 
-	"github.com/upbound/upjet-provider-template/apis/v1beta1"
+	"github.com/Nutanix/provider-nutanix/apis/v1beta1"
 )
 
 const (
@@ -24,7 +24,13 @@ const (
 	errGetProviderConfig    = "cannot get referenced ProviderConfig"
 	errTrackUsage           = "cannot track ProviderConfig usage"
 	errExtractCredentials   = "cannot extract credentials"
-	errUnmarshalCredentials = "cannot unmarshal template credentials as JSON"
+	errUnmarshalCredentials = "cannot unmarshal nutanix credentials as JSON"
+
+	keyUsername     = "username"
+	keyPassword     = "password"
+	keyEndpoint     = "endpoint"
+	keyPort         = "port"
+	keyInsecure     = "insecure"
 )
 
 // TerraformSetupBuilder builds Terraform a terraform.SetupFn function which
@@ -61,12 +67,26 @@ func TerraformSetupBuilder(version, providerSource, providerVersion string) terr
 		if err := json.Unmarshal(data, &creds); err != nil {
 			return ps, errors.Wrap(err, errUnmarshalCredentials)
 		}
-
-		// Set credentials in Terraform provider configuration.
-		/*ps.Configuration = map[string]any{
-			"username": creds["username"],
-			"password": creds["password"],
-		}*/
+		ps.Configuration = map[string]any{}
+		if v, ok := creds[keyUsername]; ok {
+		  ps.Configuration[keyUsername] = v
+		}
+		ps.Configuration = map[string]any{}
+		if v, ok := creds[keyPassword]; ok {
+		  ps.Configuration[keyPassword] = v
+		}
+		ps.Configuration = map[string]any{}
+		if v, ok := creds[keyEndpoint]; ok {
+		  ps.Configuration[keyEndpoint] = v
+		}
+		ps.Configuration = map[string]any{}
+		if v, ok := creds[keyPort]; ok {
+		  ps.Configuration[keyPort] = v
+		}
+		ps.Configuration = map[string]any{}
+		if v, ok := creds[keyInsecure]; ok {
+		  ps.Configuration[keyInsecure] = v
+		}
 		return ps, nil
 	}
 }
