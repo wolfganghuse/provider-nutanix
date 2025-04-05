@@ -1,0 +1,12 @@
+apiVersion: image.nutanix.com/v1alpha1
+kind: Image
+metadata:
+  annotations:
+    meta.upbound.io/example-id: image/v1alpha1/image
+  labels:
+    testing.upbound.io/example-name: test
+  name: test
+spec:
+  forProvider:
+    description: Ubuntu
+    sourceUri: http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/mini.iso

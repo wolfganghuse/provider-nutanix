@@ -10,7 +10,7 @@ import (
 
 	ujconfig "github.com/crossplane/upjet/pkg/config"
 
-	"github.com/wolfganghuse/provider-nutanix/config/image"
+	nutanix_image "github.com/wolfganghuse/provider-nutanix/config/image"
 )
 
 const (

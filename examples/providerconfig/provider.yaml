@@ -1,0 +1,6 @@
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-nutanix
+spec:
+  package: github.com/wolfganghuse/provider-nutanix:v0.1.0

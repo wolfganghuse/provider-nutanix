@@ -71,19 +71,15 @@ func TerraformSetupBuilder(version, providerSource, providerVersion string) terr
 		if v, ok := creds[keyUsername]; ok {
 		  ps.Configuration[keyUsername] = v
 		}
-		ps.Configuration = map[string]any{}
 		if v, ok := creds[keyPassword]; ok {
 		  ps.Configuration[keyPassword] = v
 		}
-		ps.Configuration = map[string]any{}
 		if v, ok := creds[keyEndpoint]; ok {
 		  ps.Configuration[keyEndpoint] = v
 		}
-		ps.Configuration = map[string]any{}
 		if v, ok := creds[keyPort]; ok {
 		  ps.Configuration[keyPort] = v
 		}
-		ps.Configuration = map[string]any{}
 		if v, ok := creds[keyInsecure]; ok {
 		  ps.Configuration[keyInsecure] = v
 		}

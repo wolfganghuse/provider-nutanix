@@ -12,10 +12,10 @@ TERRAFORM_VERSION_VALID := $(shell [ "$(TERRAFORM_VERSION)" = "`printf "$(TERRAF
 
 export TERRAFORM_PROVIDER_SOURCE ?= nutanix/nutanix
 export TERRAFORM_PROVIDER_REPO ?= https://github.com/nutanix/terraform-provider-nutanix
-export TERRAFORM_PROVIDER_VERSION ?= 2.0.0
+export TERRAFORM_PROVIDER_VERSION ?= 1.9.5
 export TERRAFORM_PROVIDER_DOWNLOAD_NAME ?= terraform-provider-nutanix
 export TERRAFORM_PROVIDER_DOWNLOAD_URL_PREFIX ?= https://releases.hashicorp.com/$(TERRAFORM_PROVIDER_DOWNLOAD_NAME)/$(TERRAFORM_PROVIDER_VERSION)
-export TERRAFORM_NATIVE_PROVIDER_BINARY ?= terraform-provider-nutanix_v2.0.0
+export TERRAFORM_NATIVE_PROVIDER_BINARY ?= terraform-provider-nutanix_1.9.5
 export TERRAFORM_DOCS_PATH ?= website/docs/r
 
 
