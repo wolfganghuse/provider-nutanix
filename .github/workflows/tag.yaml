@@ -1,5 +1,9 @@
 name: Tag
 
+permissions:
+  contents: write  # Provide write access to contents
+
+
 on:
   workflow_dispatch: 
     inputs:
