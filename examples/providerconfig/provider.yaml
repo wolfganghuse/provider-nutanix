@@ -3,4 +3,5 @@ kind: Provider
 metadata:
   name: provider-nutanix
 spec:
-  package: github.com/wolfganghuse/provider-nutanix:v0.1.0
+  controller:
+    image: harbor.infrastructure.cloudnative.nvdlab.net/wolfgang/provider-nutanix-amd64:VERSION
