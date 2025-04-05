@@ -1,6 +1,7 @@
 /*
 Copyright 2021 Upbound Inc.
 */
+//nolint
 
 package clients
 
