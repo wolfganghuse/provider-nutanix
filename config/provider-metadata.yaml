@@ -235,7 +235,7 @@ resources:
             - name: new_api_key
               manifest: |-
                 {
-                  "alias": ""
+                  "alias": "\u003cNAME-FOR-API-KEY\u003e"
                 }
         argumentDocs:
             alias: ': - (Required) Alias for the api key to be created.'
@@ -253,8 +253,8 @@ resources:
             - name: img2
               manifest: |-
                 {
-                  "aos_package_url": "",
-                  "cluster_external_ip": "",
+                  "aos_package_url": "\u003cURL\u003e",
+                  "cluster_external_ip": "\u003cCLUSTER-IP\u003e",
                   "cluster_name": "test-FC",
                   "common_network_settings": [
                     {
@@ -262,13 +262,13 @@ resources:
                         "xx.x.xx.xx"
                       ],
                       "cvm_ntp_servers": [
-                        ""
+                        "\u003ccvm-ntp\u003e"
                       ],
                       "hypervisor_dns_servers": [
                         "xx.x.xx.xx"
                       ],
                       "hypervisor_ntp_servers": [
-                        ""
+                        "\u003chypervisor-ntp\u003e"
                       ]
                     }
                   ],
@@ -289,7 +289,7 @@ resources:
                       "hypervisor_netmask": "xx.xx.xx.xx",
                       "hypervisor_type": "kvm",
                       "image_now": true,
-                      "imaged_node_uuid": "",
+                      "imaged_node_uuid": "\u003cNODE-UUID\u003e",
                       "ipmi_gateway": "10.x.xx.xx",
                       "ipmi_ip": "10.x.xx.xx",
                       "ipmi_netmask": "10.x.xx.xx",
@@ -305,7 +305,7 @@ resources:
                       "hypervisor_netmask": "xx.xx.xx.xx",
                       "hypervisor_type": "kvm",
                       "image_now": true,
-                      "imaged_node_uuid": "",
+                      "imaged_node_uuid": "\u003cNODE-UUID\u003e",
                       "ipmi_gateway": "10.x.xx.xx",
                       "ipmi_ip": "10.x.xx.xx",
                       "ipmi_netmask": "10.x.xx.xx",
@@ -321,7 +321,7 @@ resources:
                       "hypervisor_netmask": "xx.xx.xx.xx",
                       "hypervisor_type": "kvm",
                       "image_now": true,
-                      "imaged_node_uuid": "",
+                      "imaged_node_uuid": "\u003cNODE-UUID\u003e",
                       "ipmi_gateway": "10.x.xx.xx",
                       "ipmi_ip": "10.x.xx.xx",
                       "ipmi_netmask": "10.x.xx.xx",
@@ -1233,7 +1233,7 @@ resources:
                   "networkprofileid": "{{ network_profile_id }}",
                   "nodes": [
                     {
-                      "networkprofileid": "",
+                      "networkprofileid": "\u003cnetwork-profile-uuid\u003e",
                       "vmname": "test-era-vm1"
                     }
                   ],
@@ -3283,7 +3283,7 @@ resources:
                       "address_type": "INTERNET"
                     }
                   ],
-                  "vpc_reference_uuid": "vpc_reference_uuid"
+                  "vpc_reference_uuid": "1"
                 }
         argumentDocs:
             UUID: ': - subnet UUID.'
@@ -4077,7 +4077,7 @@ resources:
                     {
                       "directory_service_reference": [
                         {
-                          "uuid": ""
+                          "uuid": "\u003cdirectory-service-uuid\u003e"
                         }
                       ],
                       "user_principal_name": "test-user@ntnxlab.local"
@@ -4091,7 +4091,7 @@ resources:
                     {
                       "identity_provider_reference": [
                         {
-                          "uuid": ""
+                          "uuid": "\u003cidentity-provider-uuid\u003e"
                         }
                       ],
                       "username": "username"
@@ -4138,7 +4138,7 @@ resources:
                 {
                   "directory_service_user_group": [
                     {
-                      "distinguished_name": ""
+                      "distinguished_name": "\u003cdistinguished name for the user group\u003e"
                     }
                   ]
                 }
@@ -4147,8 +4147,8 @@ resources:
                 {
                   "saml_user_group": [
                     {
-                      "idp_uuid": "",
-                      "name": ""
+                      "idp_uuid": "\u003cidp uuid of the group\u003e",
+                      "name": "\u003cname of saml group\u003e"
                     }
                   ]
                 }
