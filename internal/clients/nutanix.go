@@ -15,7 +15,7 @@ import (
 
 	"github.com/crossplane/upjet/pkg/terraform"
 
-	"github.com/Nutanix/provider-nutanix/apis/v1beta1"
+	"github.com/wolfganghuse/provider-nutanix/apis/v1beta1"
 )
 
 const (

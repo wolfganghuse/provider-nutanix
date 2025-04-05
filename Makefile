@@ -2,7 +2,7 @@
 # Setup Project
 
 PROJECT_NAME ?= provider-nutanix
-PROJECT_REPO ?= github.com/Nutanix/$(PROJECT_NAME)
+PROJECT_REPO ?= github.com/wolfganghuse/$(PROJECT_NAME)
 
 export TERRAFORM_VERSION ?= 1.5.7
 

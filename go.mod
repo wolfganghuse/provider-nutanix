@@ -1,4 +1,4 @@
-module github.com/Nutanix/provider-nutanix
+module github.com/wolfganghuse/provider-nutanix
 
 go 1.21
 

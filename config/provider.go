@@ -15,7 +15,7 @@ import (
 
 const (
 	resourcePrefix = "nutanix"
-	modulePath     = "github.com/Nutanix/provider-nutanix"
+	modulePath     = "github.com/wolfganghuse/provider-nutanix"
 )
 
 //go:embed schema.json

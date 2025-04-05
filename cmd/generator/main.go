@@ -11,7 +11,7 @@ import (
 
 	"github.com/crossplane/upjet/pkg/pipeline"
 
-	"github.com/Nutanix/provider-nutanix/config"
+	"github.com/wolfganghuse/provider-nutanix/config"
 )
 
 func main() {

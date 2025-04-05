@@ -31,12 +31,12 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 	"sigs.k8s.io/controller-runtime/pkg/metrics"
 
-	"github.com/Nutanix/provider-nutanix/apis"
-	"github.com/Nutanix/provider-nutanix/apis/v1alpha1"
-	"github.com/Nutanix/provider-nutanix/config"
-	"github.com/Nutanix/provider-nutanix/internal/clients"
-	"github.com/Nutanix/provider-nutanix/internal/controller"
-	"github.com/Nutanix/provider-nutanix/internal/features"
+	"github.com/wolfganghuse/provider-nutanix/apis"
+	"github.com/wolfganghuse/provider-nutanix/apis/v1alpha1"
+	"github.com/wolfganghuse/provider-nutanix/config"
+	"github.com/wolfganghuse/provider-nutanix/internal/clients"
+	"github.com/wolfganghuse/provider-nutanix/internal/controller"
+	"github.com/wolfganghuse/provider-nutanix/internal/features"
 )
 
 func main() {
